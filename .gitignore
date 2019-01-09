@@ -1,0 +1,36 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+_UpgradeReport_Files
+Debug
+Release
+x63
+Win32
+temp
+.vs
+
+skiatest.exe
+skiatest.exp
+skiatest.lib
+*.v11.suo
+
+*.vs
+*.sdf
+*.tlog
+*.obj
+*.log
+*.pdb
+*.db
+*.opensdf
+*.ipch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
