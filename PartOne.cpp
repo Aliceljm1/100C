@@ -28,7 +28,7 @@ int PartOne::longest_plateau(int x[], int n)
 }
 
 
-void PartOne::answer()
+void PartOne::platEauB()
 {
 	int  x[] = { 3, 4, 4, 7, 8, 9, 9, 9, 9, 10 };
 	int  n = sizeof(x) / sizeof(int);
@@ -44,7 +44,7 @@ void PartOne::answer()
 }
 
 //最长数字平台,第一个自答
-void PartOne::platEau()
+void PartOne::platEauA()
 {
 	int maxlen = 1;
 	int currlen = 1;

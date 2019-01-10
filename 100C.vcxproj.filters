@@ -21,6 +21,9 @@
     <ClInclude Include="PartOne.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="PartSix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -32,5 +35,11 @@
     <ClCompile Include="PartOne.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="PartSix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
 </Project>

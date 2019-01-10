@@ -6,8 +6,8 @@ class PartOne
 public:
 	PartOne();
 	virtual ~PartOne();
-	void platEau();
-	void answer();
+	void platEauA();
+	void platEauB();
 	int longest_plateau(int x[], int n);
 
 };
