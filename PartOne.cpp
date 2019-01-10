@@ -43,6 +43,30 @@ void PartOne::platEauB()
 		longest_plateau(x, n));
 }
 
+void PartOne::sortNurmal()
+{
+	int a[] = { 7,1,5,3,2,6 };
+	//int a[] = { 1,6,2,5 };
+	//int a[]= { 1,2,6,5 };//一次交换就可完成
+	int len = sizeof(a) / sizeof(int);
+	int switchCount = 0;
+	for (int i = 0; i < len - 1; i++) {//此处为何i<len-1, 最后一个元素没有下一个元素了，
+		for (int j = 0; j < len - 1 - i; j++)//此处为何j<len-1-i, 因为每经过一轮排序之后当前最大的数字就诞生了，
+		{
+			int temp;
+			if (a[j] > a[j + 1]) {
+				switchCount++;
+				temp = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = temp;
+			}
+		}
+	}
+	//思考当前排序的规律，统计排序次数，
+
+}
+
+
 //最长数字平台,第一个自答
 void PartOne::platEauA()
 {
