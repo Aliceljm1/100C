@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "PartOne.h"
-
+#include <vector>
+using namespace std;
 
 PartOne::PartOne()
 {
@@ -43,6 +44,43 @@ void PartOne::platEauB()
 		longest_plateau(x, n));
 }
 
+
+/**
+*查找n以内每个数字都相同且被3整除的数字
+*/
+void PartOne::findSameNum(int n)
+{
+	vector<int> targetNum;
+	
+	int k = 3;
+	for (int i = n; i > k; i--) {
+		if (i%k == 0) {
+			char str[25];
+			_itoa_s(i, str, 10);//https://www.cnblogs.com/bluestorm/p/3168719.html
+			int strLen = strlen(str);
+			int sameCount = 0;
+			for (int j = 0; j < strLen; j++)
+			{
+				if (str[0] == str[j])
+					sameCount++;
+			}
+			if (sameCount == strLen)
+				targetNum.push_back(i);
+		}
+	}
+}
+
+/**
+* 一次性构造出所有小于等于n且每位数字相等且能被三整除的数，
+*/
+void PartOne::findSameNum2(int n) 
+{
+
+}
+
+/**
+* 最基本的冒泡排序
+*/
 void PartOne::sortNurmal()
 {
 	int a[] = { 7,1,5,3,2,6 };
