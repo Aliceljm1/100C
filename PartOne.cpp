@@ -105,7 +105,10 @@ void PartOne::sortNurmal()
 }
 
 
-//最长数字平台,第一个自答
+/**
+*最长数字平台,从一串从小到大排列好的数字中找到最长的连续相同的数字个数
+第一个自答
+*/
 void PartOne::platEauA()
 {
 	int maxlen = 1;
